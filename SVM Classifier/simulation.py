@@ -13,7 +13,7 @@ data = np.concatenate((x,y), axis=1) # Concatenate data together
 np.random.shuffle(data) # Shuffle the data
 
 for i, _ in enumerate(data):
-    if i > 5: # At Least 2 classes needed, so skipping some iterations
+    if i > 10: # At Least 2 classes needed, so skipping some iterations
         # Model
         model = SVC()
         model.fit(data[:i+1, :2], data[:i+1, 2])
